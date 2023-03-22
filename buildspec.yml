@@ -11,6 +11,6 @@ phases:
   post_build:
     commands:
       - docker push 909350318202.dkr.ecr.ap-southeast-1.amazonaws.com/ecstestapp:latest
-      - printf '[{"name":ecstestapp,"imageUri":"%s"}]' 909350318202.dkr.ecr.ap-southeast-1.amazonaws.com/ecstestapp:latest > imagedefinitions.json
+      - printf '[{"name":"ecstestapp","imageUri":"%s"}]' 909350318202.dkr.ecr.ap-southeast-1.amazonaws.com/ecstestapp:latest > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
